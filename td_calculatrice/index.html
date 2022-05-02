@@ -11,77 +11,77 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="monApp">
         <div class="row c1">
             <div class="col-4 screen">
-                <p class="result">1111</p>
+                <p class="result">{{result}}</p>
             </div>
         </div>
         <div class="row c2">
           <div class="col touch">
-            <div class="orange-btn btn reset">C</div>
+            <div class="orange-btn btn reset" @click="clear">C</div>
           </div>
           <div class="col touch">
-            <div class="blue-btn btn">+/-</div>
+            <div class="blue-btn btn" @click="operation('')">+/-</div>
           </div>
           <div class="col touch">
-            <div class="blue-btn btn">%</div>
+            <div class="blue-btn btn" @click="purcent()">%</div>
           </div>
           <div class="col touch">
-            <div class="blue-btn btn">/</div>
+            <div class="blue-btn btn" @click="operation('/')">/</div>
           </div>
         </div>
         <div class="row c3">
             <div class="col touch">
-                <div class="black-btn btn">7</div>
+                <div class="black-btn btn" @click="addNumber('7')">7</div>
             </div>
             <div class="col touch">
-                <div class="black-btn btn">8</div>
+                <div class="black-btn btn" @click="addNumber('8')">8</div>
             </div>
             <div class="col touch">
-                <div class="black-btn btn">9</div>
+                <div class="black-btn btn" @click="addNumber('9')">9</div>
             </div>
             <div class="col touch">
-                <div class="black-btn btn" >*</div>
+                <div class="black-btn btn" @click="operation('*')">*</div>
             </div>
           </div>
           <div class="row c4">
             <div class="col touch">
-                <div class="black-btn btn">4</div>
+                <div class="black-btn btn" @click="addNumber('4')">4</div>
             </div>
             <div class="col touch">
-                <div class="black-btn btn">5</div>
+                <div class="black-btn btn" @click="addNumber('5')">5</div>
             </div>
             <div class="col touch">
-                <div class="black-btn btn">6</div>
+                <div class="black-btn btn" @click="addNumber('6')">6</div>
             </div>
             <div class="col touch">
-                <div class="blue-btn btn">-</div>
+                <div class="blue-btn btn" @click="operation('-')">-</div>
             </div>
           </div>
           <div class="row c5">
             <div class="col touch">
-                <div class="black-btn btn">1</div>
+                <div class="black-btn btn" @click="addNumber('1')">1</div>
             </div>
             <div class="col touch">
-                <div class="black-btn btn">2</div>
+                <div class="black-btn btn" @click="addNumber('2')">2</div>
             </div>
             <div class="col touch">
-                <div class="black-btn btn">3</div>
+                <div class="black-btn btn" @click="addNumber('3')">3</div>
             </div>
             <div class="col touch">
-                <div class="blue-btn btn">+</div>
+                <div class="blue-btn btn" @click="operation('+')">+</div>
             </div>
           </div>
           <div class="row c6">
             <div class="col-3 touch zero">
-                <div class="blue-btn btn">0</div>
+                <div class="blue-btn btn" @click="addNumber('0')">0</div>
             </div>
             <div class="col touch">
-                <div class="blue-btn btn">.</div>
+                <div class="blue-btn btn" @click="operation('.')">.</div>
             </div>
             <div class="col touch">
-                <div class="blue-btn btn">=</div>
+                <div class="blue-btn btn" @click="calcul()">=</div>
             </div>
           </div>
     </div>
