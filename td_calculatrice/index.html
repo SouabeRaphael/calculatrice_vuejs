@@ -13,6 +13,7 @@
 <body>
     <div class="container" id="monApp">
         <div class="row c1">
+            <h1 class="name_calulator">LaManu</h1>
             <div class="col-4 screen">
                 <p class="result">{{result}}</p>
             </div>
@@ -22,7 +23,7 @@
             <div class="orange-btn btn reset" @click="clear">C</div>
           </div>
           <div class="col touch">
-            <div class="blue-btn btn" @click="operation('')">+/-</div>
+            <div class="blue-btn btn" @click="plusless('')">+/-</div>
           </div>
           <div class="col touch">
             <div class="blue-btn btn" @click="purcent()">%</div>
@@ -78,7 +79,7 @@
                 <div class="blue-btn btn" @click="addNumber('0')">0</div>
             </div>
             <div class="col touch">
-                <div class="blue-btn btn" @click="operation('.')">.</div>
+                <div class="blue-btn btn" @click="addNumber('.')">.</div>
             </div>
             <div class="col touch">
                 <div class="blue-btn btn" @click="calcul()">=</div>
