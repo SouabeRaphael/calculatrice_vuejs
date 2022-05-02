@@ -3,9 +3,9 @@ let app = new Vue({
     el: "#monApp",
 
     data: {
-        result: 0,
+        result: '',
         nb: 0,
-        resultmemory: '0',
+        resultmemory: '',
         operationmemory: '',
     },
     methods: {
@@ -48,7 +48,7 @@ let app = new Vue({
 
         // Réinitialise result, resultmemory et operationmemory
         clear() {
-            this.result = '0';
+            this.result = '';
             this.resultmemory = '';
             this.operationmemory = '';
         },

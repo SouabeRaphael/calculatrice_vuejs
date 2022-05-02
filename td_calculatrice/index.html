@@ -15,7 +15,7 @@
         <div class="row c1">
             <h1 class="name_calulator">LaManu</h1>
             <div class="col-4 screen">
-                <p class="result">{{result}}</p>
+                <p class="result">{{resultmemory}} {{operationmemory}} {{result}}</p>
             </div>
         </div>
         <div class="row c2">
@@ -43,7 +43,7 @@
                 <div class="black-btn btn" @click="addNumber('9')">9</div>
             </div>
             <div class="col touch">
-                <div class="black-btn btn" @click="operation('*')">*</div>
+                <div class="blue-btn btn" @click="operation('*')">*</div>
             </div>
           </div>
           <div class="row c4">
